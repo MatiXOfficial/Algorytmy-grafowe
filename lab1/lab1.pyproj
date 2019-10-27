@@ -4,13 +4,18 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>fbc5794a-ec88-4409-a7e4-be7c68fa6aea</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>findunion.py</StartupFile>
+    <StartupFile>dfs.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>lab1</Name>
     <RootNamespace>lab1</RootNamespace>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterArguments>
+    </InterpreterArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <CommandLineArguments>graphs\clique100</CommandLineArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,7 +26,32 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="dimacs.py" />
     <Compile Include="findunion.py" />
+    <Compile Include="dfs.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="graphs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="graphs\clique100" />
+    <Content Include="graphs\clique1000" />
+    <Content Include="graphs\clique20" />
+    <Content Include="graphs\clique5" />
+    <Content Include="graphs\g1" />
+    <Content Include="graphs\grid100x100" />
+    <Content Include="graphs\grid5x5" />
+    <Content Include="graphs\path10" />
+    <Content Include="graphs\path1000" />
+    <Content Include="graphs\path10000" />
+    <Content Include="graphs\pp10" />
+    <Content Include="graphs\pp100" />
+    <Content Include="graphs\pp1000" />
+    <Content Include="graphs\rand1000_100000" />
+    <Content Include="graphs\rand100_500" />
+    <Content Include="graphs\rand20_100" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in
