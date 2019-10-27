@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>fbc5794a-ec88-4409-a7e4-be7c68fa6aea</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>dfs.py</StartupFile>
+    <StartupFile>Dijkstra.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -15,7 +15,7 @@
     <InterpreterArguments>
     </InterpreterArguments>
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
-    <CommandLineArguments>graphs\clique100</CommandLineArguments>
+    <CommandLineArguments>graphs\g1</CommandLineArguments>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -29,6 +29,9 @@
     <Compile Include="dimacs.py" />
     <Compile Include="findunion.py" />
     <Compile Include="dfs.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Dijkstra.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
