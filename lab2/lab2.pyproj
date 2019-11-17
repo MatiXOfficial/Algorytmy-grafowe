@@ -12,7 +12,7 @@
     <Name>lab2</Name>
     <RootNamespace>lab2</RootNamespace>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <CommandLineArguments>graphs\flow\pp100</CommandLineArguments>
+    <CommandLineArguments>graphs\flow\rand20_100 graphs\connectivity\clique20</CommandLineArguments>
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
     <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
@@ -28,6 +28,9 @@
     <Compile Include="graph.py" />
     <Compile Include="dimacs.py" />
     <Compile Include="FordFulkerson.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="connectivity.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
