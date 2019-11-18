@@ -1,0 +1,67 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>25de304c-3bee-4055-aed0-ef79a3383de0</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>stoer_wagner.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>lab3</Name>
+    <RootNamespace>lab3</RootNamespace>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>graphs-lab3\example</CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="graphs-lab3\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="graphs-lab3\clique100" />
+    <Content Include="graphs-lab3\clique20" />
+    <Content Include="graphs-lab3\clique200" />
+    <Content Include="graphs-lab3\clique5" />
+    <Content Include="graphs-lab3\cycle" />
+    <Content Include="graphs-lab3\example" />
+    <Content Include="graphs-lab3\geo100_2a" />
+    <Content Include="graphs-lab3\geo20_2b" />
+    <Content Include="graphs-lab3\geo20_2c" />
+    <Content Include="graphs-lab3\grid100x100" />
+    <Content Include="graphs-lab3\grid5x5" />
+    <Content Include="graphs-lab3\mc1" />
+    <Content Include="graphs-lab3\mc2" />
+    <Content Include="graphs-lab3\path" />
+    <Content Include="graphs-lab3\rand100_500" />
+    <Content Include="graphs-lab3\rand20_100" />
+    <Content Include="graphs-lab3\simple" />
+    <Content Include="graphs-lab3\trivial" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="dimacs.py" />
+    <Compile Include="graph.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="stoer_wagner.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

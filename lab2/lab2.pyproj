@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b45048ba-4411-45d7-a798-d566ea54d4ca</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>FordFulkerson.py</StartupFile>
+    <StartupFile>connectivity.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>

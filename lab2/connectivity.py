@@ -30,11 +30,11 @@ def connectivityFordFulkerson(V, E, s, t, dfs = dfs):
 def connectivity(V, E):
     result = maxsize
 
-    for u in range(1, V + 1):
-        for v in range(u + 1, V + 1):
-            tmp = connectivityFordFulkerson(V, E, u, v, dfs)
-            if tmp < result:
-                result = tmp
+    u = 1
+    for v in range(u + 1, V + 1):
+        tmp = connectivityFordFulkerson(V, E, u, v, dfs)
+        if tmp < result:
+            result = tmp
     return result // 2
 
 print(connectivity(V, E))
