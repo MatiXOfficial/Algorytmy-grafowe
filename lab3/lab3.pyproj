@@ -12,8 +12,9 @@
     <Name>lab3</Name>
     <RootNamespace>lab3</RootNamespace>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <CommandLineArguments>graphs-lab3\example</CommandLineArguments>
+    <CommandLineArguments>graphs-lab3\rand20_100</CommandLineArguments>
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>

@@ -26,5 +26,14 @@ def printGraph(G):
         if G[i].vertices:
             print(G[i].vertices, ":", G[i].edges)
 
+def verticesNumber(G):
+    V = len(G)
+    result = 0
+    for i in range(1, V):
+        if G[i].vertices:
+            result += 1
+
+    return result
+
 #G = buildGraph(V+1, E)
 #printGraph(G)
