@@ -1,7 +1,5 @@
 from dimacs import *
-from sys import argv
-
-(V, E) = loadWeightedGraph(argv[1])
+import os
 
 class Node:
   def __init__(self, idx):
@@ -38,25 +36,6 @@ def lexBFS(G, s = 1):
         sets = new_sets
     return visited
 
-def _lexBFS(G, s = 1):
-    V = len(G)
-    sets = [{i for i in range(V)} - {s}, {s}]
-    visited = []
-    while sets:
-        u = sets[-1].pop()
-        visited.append(u)
-        i = 0
-        while i < len(sets):
-            set = sets[i]
-            sets.pop(i)
-            if set - G[u].out:
-                sets.insert(i, set - G[u].out)
-                i += 1
-            if set & G[u].out:
-                sets.insert(i, set & G[u].out)
-                i += 1
-    return visited
-
 def checkLexBFS(G, vs):
   n = len(G)
   pi = [None] * n
@@ -75,34 +54,15 @@ def checkLexBFS(G, vs):
           return False
   return True
 
-def find_RN(G, vs, u):
-    neigh = G[u].out
-    prev = {vs[i] for i in range(u)}
-    return neigh & prev
+def test_lexBFS(dir):
+    for file in os.listdir(dir):
+        name = dir + '\\' + file
+        (V, E) = loadWeightedGraph(name)
+        G = buildGraph(V+1, E)
+        if checkLexBFS(G, lexBFS(G)) == True:
+            print("ok", end = " - ")
+        else:
+            print("ERROR", end = " - ")
+        print(file)
 
-def parent(G, RN, vs, u):
-    for i in range(u - 1, -1, -1):
-        if vs[i] in RN:
-            return vs[i]
-
-    
-
-def is_chordal(G):
-    V = len(G)
-    vs = lexBFS(G)
-    for i in range(1, V - 1):
-        u = vs[i]
-        RN = find_RN(G, vs, u)
-        parent = parent(G, RN, vs, u)
-        if not RN - parent in find_RN(G, vs, parent):
-            return False
-    return True
-
-
-
-
-
-G = buildGraph(V+1, E)
-vs = lexBFS(G)
-print(vs)
-print(checkLexBFS(G, vs))
+test_lexBFS("graphs-lab4\chordal")

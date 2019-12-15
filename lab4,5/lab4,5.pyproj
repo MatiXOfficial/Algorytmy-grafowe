@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>849adf2d-323a-4aef-a4e5-1e26a15e71a7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>graph.py</StartupFile>
+    <StartupFile>is_chordal.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -12,7 +12,7 @@
     <Name>lab4,5</Name>
     <RootNamespace>lab4,5</RootNamespace>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <CommandLineArguments>graphs-lab4\chordal\interval-rnd100</CommandLineArguments>
+    <CommandLineArguments>graphs-lab4\chordal\example-fig5</CommandLineArguments>
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
     <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
@@ -27,6 +27,9 @@
   <ItemGroup>
     <Compile Include="dimacs.py" />
     <Compile Include="graph.py" />
+    <Compile Include="is_chordal.py">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="graphs-lab4\" />
