@@ -1,0 +1,164 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>849adf2d-323a-4aef-a4e5-1e26a15e71a7</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>graph.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>lab4,5</Name>
+    <RootNamespace>lab4,5</RootNamespace>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <CommandLineArguments>graphs-lab4\chordal\interval-rnd100</CommandLineArguments>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
+    <IsWindowsApplication>False</IsWindowsApplication>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="dimacs.py" />
+    <Compile Include="graph.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="graphs-lab4\" />
+    <Folder Include="graphs-lab4\chordal\" />
+    <Folder Include="graphs-lab4\coloring\" />
+    <Folder Include="graphs-lab4\interval\" />
+    <Folder Include="graphs-lab4\maxclique\" />
+    <Folder Include="graphs-lab4\vcover\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="graphs-lab4\chordal\AT" />
+    <Content Include="graphs-lab4\chordal\clique100" />
+    <Content Include="graphs-lab4\chordal\clique20" />
+    <Content Include="graphs-lab4\chordal\clique200" />
+    <Content Include="graphs-lab4\chordal\clique4" />
+    <Content Include="graphs-lab4\chordal\clique5" />
+    <Content Include="graphs-lab4\chordal\cycle3" />
+    <Content Include="graphs-lab4\chordal\cycle4" />
+    <Content Include="graphs-lab4\chordal\cycle6" />
+    <Content Include="graphs-lab4\chordal\example-fig5" />
+    <Content Include="graphs-lab4\chordal\franklin" />
+    <Content Include="graphs-lab4\chordal\grid5x5" />
+    <Content Include="graphs-lab4\chordal\grotzsch" />
+    <Content Include="graphs-lab4\chordal\house" />
+    <Content Include="graphs-lab4\chordal\interval-rnd10" />
+    <Content Include="graphs-lab4\chordal\interval-rnd100" />
+    <Content Include="graphs-lab4\chordal\interval-rnd20" />
+    <Content Include="graphs-lab4\chordal\interval-rnd30" />
+    <Content Include="graphs-lab4\chordal\interval-rnd50" />
+    <Content Include="graphs-lab4\chordal\interval-rnd6" />
+    <Content Include="graphs-lab4\chordal\interval-rnd8" />
+    <Content Include="graphs-lab4\chordal\K33" />
+    <Content Include="graphs-lab4\chordal\nonplanar-ex1" />
+    <Content Include="graphs-lab4\chordal\nonplanar-ex2" />
+    <Content Include="graphs-lab4\chordal\path" />
+    <Content Include="graphs-lab4\chordal\simple" />
+    <Content Include="graphs-lab4\chordal\simple-noninterval1" />
+    <Content Include="graphs-lab4\chordal\simple-noninterval2" />
+    <Content Include="graphs-lab4\coloring\.path.swp" />
+    <Content Include="graphs-lab4\coloring\AT" />
+    <Content Include="graphs-lab4\coloring\clique100" />
+    <Content Include="graphs-lab4\coloring\clique20" />
+    <Content Include="graphs-lab4\coloring\clique200" />
+    <Content Include="graphs-lab4\coloring\clique4" />
+    <Content Include="graphs-lab4\coloring\clique5" />
+    <Content Include="graphs-lab4\coloring\cycle3" />
+    <Content Include="graphs-lab4\coloring\example-fig5" />
+    <Content Include="graphs-lab4\coloring\house" />
+    <Content Include="graphs-lab4\coloring\interval-rnd10" />
+    <Content Include="graphs-lab4\coloring\interval-rnd100" />
+    <Content Include="graphs-lab4\coloring\interval-rnd20" />
+    <Content Include="graphs-lab4\coloring\interval-rnd30" />
+    <Content Include="graphs-lab4\coloring\interval-rnd50" />
+    <Content Include="graphs-lab4\coloring\interval-rnd6" />
+    <Content Include="graphs-lab4\coloring\interval-rnd8" />
+    <Content Include="graphs-lab4\coloring\nonplanar-ex1" />
+    <Content Include="graphs-lab4\coloring\path" />
+    <Content Include="graphs-lab4\coloring\simple" />
+    <Content Include="graphs-lab4\coloring\simple-noninterval1" />
+    <Content Include="graphs-lab4\coloring\simple-noninterval2" />
+    <Content Include="graphs-lab4\interval\AT" />
+    <Content Include="graphs-lab4\interval\clique100" />
+    <Content Include="graphs-lab4\interval\clique20" />
+    <Content Include="graphs-lab4\interval\clique200" />
+    <Content Include="graphs-lab4\interval\clique4" />
+    <Content Include="graphs-lab4\interval\clique5" />
+    <Content Include="graphs-lab4\interval\cycle3" />
+    <Content Include="graphs-lab4\interval\example-fig5" />
+    <Content Include="graphs-lab4\interval\house" />
+    <Content Include="graphs-lab4\interval\interval-rnd10" />
+    <Content Include="graphs-lab4\interval\interval-rnd100" />
+    <Content Include="graphs-lab4\interval\interval-rnd20" />
+    <Content Include="graphs-lab4\interval\interval-rnd30" />
+    <Content Include="graphs-lab4\interval\interval-rnd50" />
+    <Content Include="graphs-lab4\interval\interval-rnd6" />
+    <Content Include="graphs-lab4\interval\interval-rnd8" />
+    <Content Include="graphs-lab4\interval\nonplanar-ex1" />
+    <Content Include="graphs-lab4\interval\path" />
+    <Content Include="graphs-lab4\interval\simple" />
+    <Content Include="graphs-lab4\interval\simple-noninterval1" />
+    <Content Include="graphs-lab4\interval\simple-noninterval2" />
+    <Content Include="graphs-lab4\maxclique\AT" />
+    <Content Include="graphs-lab4\maxclique\clique100" />
+    <Content Include="graphs-lab4\maxclique\clique20" />
+    <Content Include="graphs-lab4\maxclique\clique200" />
+    <Content Include="graphs-lab4\maxclique\clique4" />
+    <Content Include="graphs-lab4\maxclique\clique5" />
+    <Content Include="graphs-lab4\maxclique\cycle3" />
+    <Content Include="graphs-lab4\maxclique\example-fig5" />
+    <Content Include="graphs-lab4\maxclique\house" />
+    <Content Include="graphs-lab4\maxclique\interval-rnd10" />
+    <Content Include="graphs-lab4\maxclique\interval-rnd100" />
+    <Content Include="graphs-lab4\maxclique\interval-rnd20" />
+    <Content Include="graphs-lab4\maxclique\interval-rnd30" />
+    <Content Include="graphs-lab4\maxclique\interval-rnd50" />
+    <Content Include="graphs-lab4\maxclique\interval-rnd6" />
+    <Content Include="graphs-lab4\maxclique\interval-rnd8" />
+    <Content Include="graphs-lab4\maxclique\nonplanar-ex1" />
+    <Content Include="graphs-lab4\maxclique\path" />
+    <Content Include="graphs-lab4\maxclique\simple" />
+    <Content Include="graphs-lab4\maxclique\simple-noninterval1" />
+    <Content Include="graphs-lab4\maxclique\simple-noninterval2" />
+    <Content Include="graphs-lab4\vcover\.simple-noninterval2.swp" />
+    <Content Include="graphs-lab4\vcover\AT" />
+    <Content Include="graphs-lab4\vcover\clique100" />
+    <Content Include="graphs-lab4\vcover\clique20" />
+    <Content Include="graphs-lab4\vcover\clique200" />
+    <Content Include="graphs-lab4\vcover\clique4" />
+    <Content Include="graphs-lab4\vcover\clique5" />
+    <Content Include="graphs-lab4\vcover\cycle3" />
+    <Content Include="graphs-lab4\vcover\example-fig5" />
+    <Content Include="graphs-lab4\vcover\house" />
+    <Content Include="graphs-lab4\vcover\interval-rnd10" />
+    <Content Include="graphs-lab4\vcover\interval-rnd100" />
+    <Content Include="graphs-lab4\vcover\interval-rnd20" />
+    <Content Include="graphs-lab4\vcover\interval-rnd30" />
+    <Content Include="graphs-lab4\vcover\interval-rnd50" />
+    <Content Include="graphs-lab4\vcover\interval-rnd6" />
+    <Content Include="graphs-lab4\vcover\interval-rnd8" />
+    <Content Include="graphs-lab4\vcover\nonplanar-ex1" />
+    <Content Include="graphs-lab4\vcover\path" />
+    <Content Include="graphs-lab4\vcover\simple" />
+    <Content Include="graphs-lab4\vcover\simple-noninterval1" />
+    <Content Include="graphs-lab4\vcover\simple-noninterval2" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

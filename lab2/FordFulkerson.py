@@ -45,5 +45,5 @@ def fordFulkerson(V, E, s, t, dfs = dfs):
             result += edge[1]
     return result
 
-#print(fordFulkerson(V, E, 1, V))
+print(fordFulkerson(V, E, 1, V))
 

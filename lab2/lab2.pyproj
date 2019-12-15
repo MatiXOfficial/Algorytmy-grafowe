@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>b45048ba-4411-45d7-a798-d566ea54d4ca</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>connectivity.py</StartupFile>
+    <StartupFile>FordFulkerson.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -12,7 +12,7 @@
     <Name>lab2</Name>
     <RootNamespace>lab2</RootNamespace>
     <LaunchProvider>Standard Python launcher</LaunchProvider>
-    <CommandLineArguments>graphs\flow\rand20_100 graphs\connectivity\clique20</CommandLineArguments>
+    <CommandLineArguments>graphs\flow\clique100</CommandLineArguments>
     <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
     <IsWindowsApplication>False</IsWindowsApplication>
   </PropertyGroup>
