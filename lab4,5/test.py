@@ -78,4 +78,20 @@ def test_find_chromatic_number(dir):
             print("ERROR", end = ' - ')
         print(file)
 
-test_find_chromatic_number("graphs-lab4\\coloring")
+#test_find_chromatic_number("graphs-lab4\\coloring")
+
+def test_find_vcover(dir):
+    for file in os.listdir(dir):
+        name = dir + '\\' + file
+        with open(name, 'r') as file2:
+            data = file2.readline();
+        res = int(data.split(' ')[-1])
+        (V, E) = loadWeightedGraph(name)
+        G = buildGraph(V+1, E)
+        if find_vcover(G) == res:
+            print("ok", end = ' - ')
+        else:
+            print("ERROR", end = ' - ')
+        print(file)
+
+#test_find_vcover("graphs-lab4\\vcover")

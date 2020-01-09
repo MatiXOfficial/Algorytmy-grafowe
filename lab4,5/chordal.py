@@ -43,8 +43,18 @@ def find_chromatic_number(G):
     for v in vs:
         N = G[v].out;
         used = {color[u] for u in N}
-        for c in range(V - 1):
+        for c in range(1, V):
             if not c in used:
                 color[v] = c
                 break
     return max(color)
+
+def find_vcover(G):
+    vs = lexBFS(G)
+    vs.reverse()
+    I = set()
+    for v in vs:
+        N = G[v].out;
+        if not I & N:
+            I.add(v)
+    return len(G) - len(I)
