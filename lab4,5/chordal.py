@@ -25,19 +25,26 @@ def is_chordal(G):
             return False
     return True
 
-def test_is_chordal(dir):
-    for file in os.listdir(dir):
-        name = dir + '\\' + file
-        with open(name, 'r') as file2:
-            data = file2.readline();
-        res = True if int(data.split(' ')[-1]) == 1 else False
-        (V, E) = loadWeightedGraph(name)
-        G = buildGraph(V+1, E)
-        if is_chordal(G) == res:
-            print("ok", end = ' - ')
-        else:
-            print("ERROR", end = ' - ')
-        print(file)
+def find_biggest_clique(G):
+    V = len(G)
+    vs = lexBFS(G)
+    result = 0
+    for i in range(1, V - 1):
+        u = vs[i]
+        RN = find_RN(G, vs, i)
+        if len(RN) + 1 > result:
+            result = len(RN) + 1
+    return result
 
-
-test_is_chordal("graphs-lab4\chordal")
+def find_chromatic_number(G):
+    V = len(G)
+    color = [0] * (V)
+    vs = lexBFS(G)
+    for v in vs:
+        N = G[v].out;
+        used = {color[u] for u in N}
+        for c in range(V - 1):
+            if not c in used:
+                color[v] = c
+                break
+    return max(color)

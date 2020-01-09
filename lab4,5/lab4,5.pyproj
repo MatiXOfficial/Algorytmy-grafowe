@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>849adf2d-323a-4aef-a4e5-1e26a15e71a7</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>is_chordal.py</StartupFile>
+    <StartupFile>chordal.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -27,7 +27,10 @@
   <ItemGroup>
     <Compile Include="dimacs.py" />
     <Compile Include="graph.py" />
-    <Compile Include="is_chordal.py">
+    <Compile Include="chordal.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="test.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -68,7 +71,6 @@
     <Content Include="graphs-lab4\chordal\simple" />
     <Content Include="graphs-lab4\chordal\simple-noninterval1" />
     <Content Include="graphs-lab4\chordal\simple-noninterval2" />
-    <Content Include="graphs-lab4\coloring\.path.swp" />
     <Content Include="graphs-lab4\coloring\AT" />
     <Content Include="graphs-lab4\coloring\clique100" />
     <Content Include="graphs-lab4\coloring\clique20" />
@@ -132,7 +134,6 @@
     <Content Include="graphs-lab4\maxclique\simple" />
     <Content Include="graphs-lab4\maxclique\simple-noninterval1" />
     <Content Include="graphs-lab4\maxclique\simple-noninterval2" />
-    <Content Include="graphs-lab4\vcover\.simple-noninterval2.swp" />
     <Content Include="graphs-lab4\vcover\AT" />
     <Content Include="graphs-lab4\vcover\clique100" />
     <Content Include="graphs-lab4\vcover\clique20" />
