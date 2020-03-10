@@ -1,5 +1,5 @@
 # Algorytmy-grafowe
-Term 3 - Graph Algorithms
+Semester 3 - Graph Algorithms course at AGH UST
 
 lab1 - warm up<br>
 lab2 - maximum flow (Ford-Fulkerson algorithm)<br>
